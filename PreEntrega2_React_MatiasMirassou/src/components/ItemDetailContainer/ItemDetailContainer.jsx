@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 
-export const ItemDetailContainer = () => {
+const ItemDetailContainer = () => {
 
   const [product, setProduct] = useState();
   const {id} = useParams();
@@ -20,3 +20,5 @@ export const ItemDetailContainer = () => {
     </div>
   )
 }
+
+export default ItemDetailContainer

@@ -6,7 +6,6 @@ import ItemList from "../ItemList/ItemList"
 const ItemListContainer = ({ greetings }) => {
     const [products, setProducts] = useState([])
     const {category} = useParams()
-    console.log(category)
 
     useEffect(() => {
         if(!category){
